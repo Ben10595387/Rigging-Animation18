@@ -1,0 +1,16 @@
+Connection Editor 
+	Select objects-Reload left, Reload Right
+	Select one object in the editor, 
+	Left/ Right display-useful
+	Options-alphabetical order 
+	Great for switches
+	
+	Hook up translation of one object to translation of other object. 
+Node editor
+	pretty self explanitory
+	Does not maintain offset
+	Can be used for tires. 
+	Transform - Position info, (Null object) 
+	Shape node - collection of vertecies.These two are not connected. 
+	Don't worry about unit conversion nodes
+  
