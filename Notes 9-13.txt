@@ -13,4 +13,36 @@ Node editor
 	Transform - Position info, (Null object) 
 	Shape node - collection of vertecies.These two are not connected. 
 	Don't worry about unit conversion nodes
+
+Broken FK (IK, FK switch)
+	Create groups, skeleton, fk/ ik rigs, controls. 
+	Hierarchy vs Constraints - Constraints win. 
+	Inputs tab on Channel - Can be used for props.
+	In game- Jnts have to be in Hierarchy
+
+	Cool Stuff
+	Parent Translation, not rotation. How do you code this? _Game controller 
+	Add attribute- follow translate, follow rotate. Set values.
+	Connection editor, or node editor. 
+		- load in constrainer and constraineee
+		- follow translate connection
+		- follow rotate connection. 
+		- Connect follow translate to translate and follow to ect. 
+	In Node editor 
+		- from outliner middle click and drag to node ed. 
+		- Drag from constraint to target - rotation or translation. 
+Space Switches
+	IK use 
+	select IK handle, may want it to follow something and not have to move it. 
+	world transform, COG, limb switches(greatest affect on limb jnt). 
+	Go big to small. 
+	Parent Constrain Ctrl to world transform, then to others. 
+	Add atribute - follow 
+		Enum- World, ect. This feeds the key, so you don't need to add 5 attributes.
+	Set driven key
+		need 4 sets of keys
+		Can select all of targets. 
+		Select correct enum, all 0 exept for ctrl that you want to take over. 
+		Open up graph editor, make keys straight, not curved. 
+		
   
