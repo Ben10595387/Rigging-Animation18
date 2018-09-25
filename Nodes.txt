@@ -1,0 +1,11 @@
+Multiply- used for multiplying or deviding motion, color. Takes 2 inputs (vectors) 
+
+	shift middle click drag from one node to the other and it will open the 
+	connection editor then you can connect what you want. 
+	Used for increasing basically anything. 
+PlusMinusAverage - self explanitory
+	can specify dimentional vectors. 
+
+Condition - if statement in a node. 
+
+DistanceBetween - 
