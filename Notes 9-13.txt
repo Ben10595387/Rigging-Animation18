@@ -36,7 +36,9 @@ Space Switches
 	select IK handle, may want it to follow something and not have to move it. 
 	world transform, COG, limb switches(greatest affect on limb jnt). 
 	Go big to small. 
+	Select Ctrls you want to constrain to, Then your constrainee. 
 	Parent Constrain Ctrl to world transform, then to others. 
+	Jnts are parented to Ctrls, Ctrls are siblings, parented not by hierarchy. 
 	Add atribute - follow 
 		Enum- World, ect. This feeds the key, so you don't need to add 5 attributes.
 	Set driven key
