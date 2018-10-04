@@ -1,0 +1,45 @@
+Create standard IK rig.
+Node Editor
+Create 3 Multiply/Devide Nodes for shoulder, elbow, and wrist values. 
+	Copy X values from joints and past them in the IX on the MD node.
+4Create PlusMinusAverage node.
+	Output from shoulder X MD node to ID[0] 
+	Output from Elbow X MD node to ID[1]
+	Ect. 
+	Channel box- edit change precision 6 # after decimals 
+1Create 2 locators to measure distance. Grp them. 
+	Point Ctraint from Ctrl not jnt. 
+2Create a Distance Between node. 
+	Use Locator's SHAPE node, not transform. Connect W.P to Point 1 in D.B. node.
+	Connect W.P. of Locator's shape node to Point 2 in D.B.
+3Create M.D. node. 
+	Output 1D into 2x on M.D. and Distance output to input 1X
+5Create Condition node
+	1term-distance from distance node
+	2nd term output 1d from length plus minus average node.
+	3rd term output x from scalar md to color if true conditional. 
+
+6Create Blender Node 
+	out colorR of Condition node to Color 1
+	in channel editor change color 2r to one. 
+7Add float attribute on IK handle
+	take attribute to blender att of blend node
+8Create 2 md nodes
+	take output X of length node to input 1X of respective joint MD.
+	Multiply BC node output 1R to 2X Channel on bothMD nodes.
+9Connect MD output of x to translate X of Respective Jnts. 
+
+IK control to Blender of BC. do this for both Joints. 
+
+Take Length01 (added attribute) to shoulder MD 2x
+	Same for other Length02 
+
+Global scale
+	add attribute on Transform Ctrl.
+		Att global scale Min 0 Max 1 
+	Channel ed change precision to 6. 
+	Global scale attribute on Transform Ctrl to Scale XYZ of Main Group.
+	new M.D. node. Global scale from Transfrom Ctrl to Input 2 of M.D. node.
+	plug in length from PMA to new MD input 1, put in output of MD to input 2 of 
+	scalar MD node.    
+Display-connection style for connection line appearance. 
