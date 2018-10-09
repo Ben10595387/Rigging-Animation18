@@ -45,6 +45,13 @@ Space Switches
 		need 4 sets of keys
 		Can select all of targets. 
 		Select correct enum, all 0 exept for ctrl that you want to take over. 
-		Open up graph editor, make keys straight, not curved. 
+		Open up graph editor, make keys straight, not curved.
+Instructions
+	Follow Translate - float max and min or enums.
+	use Controls to change the weights of the Ctrl Grp.
+	Follow translate/ follow rotate attributes are on each Control.  
+	Connection editor
+		left - Ctrl, Right Controller grp. 
+	Master Ctrls are constrained to spine or whatever.   
 		
   

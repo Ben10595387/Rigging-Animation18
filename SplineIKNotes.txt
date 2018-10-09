@@ -1,0 +1,15 @@
+Model straight
+JNT Chain. 
+	Evenly spaced is better. 
+Create a curve 
+	CV- Magnetic anchor point, (Bezier)
+	EP- Point on a curve. 
+	Place a point on every joint. 
+Skeleton Spline IK
+	Turn off auto create curve.
+	Slct root/ Curve.
+Create Secondary FK
+	
+Create Cntrls
+	
+
