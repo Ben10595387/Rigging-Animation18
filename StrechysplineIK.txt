@@ -1,0 +1,15 @@
+Spline IK stretchy
+
+Node Editor
+	curve shape - snake IK-Spline
+	Create Empty MD node- arc length(spline) input 1x.
+	Copy # from input 1x to input 2x. 
+	Add condition node- (if arc length > than default(2x) then...)
+	output x from MD to if color true R, arc length to first term.
+	New BC node 
+	Add Attribute on transform ctrl node
+	New MD node- scale
+	Find initial length of a joint, On the MD node paste that value onto 1x.
+	Output R of BC to input 2x.
+Go to Advanced twist controls on IK handle 
+	42
